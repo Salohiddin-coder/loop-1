@@ -1,0 +1,324 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto';
+  background-color: #F7CD75;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 100px;
+}
+
+.window__inner {  
+  display: flex;
+  width: 1000px;
+  height: 450px;
+  padding: 30px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.window__left {
+  width: 275px;
+  overflow-y: scroll;
+
+}
+
+.wallets__header {
+  display: inline-block;
+  width: 250px;
+  margin-bottom: 30px;
+  background-image: url("./img/plus.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.wallets__title {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.visa:checked ~ .visa-card {
+  border: 2px solid #2649f8;
+}
+
+.master:checked ~ .master-card {
+  border: 2px solid #2649f8;
+}
+
+.maestro:checked ~ .maestro-card {
+  border: 2px solid #2649f8;
+}
+
+.wallets__option {
+  display: block;
+  margin-bottom: 30px;
+  padding: 8px;
+  width: 250px;
+  height: 120px;
+  border: 2px solid #6f6666;
+  border-radius: 5px;
+}
+
+.visa-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.visa-card__number {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.visa-card__valid {
+  display: inline-block;
+  margin: 0;
+  font-weight: 700;
+}
+
+.master-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.master-card__number {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.master-card__valid {
+  display: inline-block;
+  margin: 0;
+  font-weight: 700;
+}
+
+.maestro-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.maestro-card__number {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.maestro-card__valid {
+  display: inline-block;
+  margin: 0;
+  font-weight: 700;
+}
+
+.balance {
+  padding-left: 30px;
+}
+
+.balance__header {
+  position: relative;
+  display: flex;
+  width: 600px;
+  margin-bottom: 40px;
+  padding-bottom: 50px;
+  align-items: center;
+  border-bottom: 1.5px solid #5f5b5b;
+  border-radius: 1px;
+}
+
+.balance__title {
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.balance__price {
+  position: absolute;
+  right: 0;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.items__apple {
+  margin-bottom: 50px;
+}
+
+.apple:checked ~ span > ul > li > .apple__selection {
+  background-image: url("./img/plus.svg");
+}
+
+.apple:checked ~ span > ul > li > .apple__price {
+  color: yellowgreen;
+}
+
+.apple__list {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.apple__selection {
+  display: inline-block;
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6f6666;
+  border-radius: 50%;
+  background-image: url("./img/minus.svg");
+  background-size: contain;
+  transition: background 0.5s ease;
+}
+
+.apple__title {
+  margin-top: 0;
+  margin-right: 300px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.apple__info {
+  margin: 0;
+  font-size: 12px;
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.payment__selection {
+  display: inline-block;
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6f6666;
+  border-radius: 50%;
+  background-image: url("./img/minus.svg");
+  background-size: contain;
+  transition: all 0.5s ease;
+}
+
+.selection__payment:checked ~ span > ul > li > .payment__selection {
+  background-image: url("./img/plus.svg");
+}
+
+.selection__payment:checked ~ span > ul > li > .payment__value {
+  color: yellowgreen;
+}
+
+.payment__title {
+  margin-right: 395px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.payment__info {
+  margin: 0;
+  font-size: 12px;
+}
+
+.selection__bill:checked ~ span > ul > li > .bill__selection {
+  background-image: url("./img/plus.svg");
+}
+
+.selection__bill:checked ~ span > ul > li > .bill__value {
+  color: yellowgreen;
+}
+
+.bill__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.bill__selection {
+  display: inline-block;
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6f6666;
+  border-radius: 50%;
+  background-image: url("./img/minus.svg");
+  background-size: contain;
+  transition: all 0.5s ease;
+}
+
+.bill__title {
+  margin-right: 418px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.bill__info {
+  margin: 0;
+  font-size: 12px;
+}
+
+.selection__ticket:checked ~ span > ul > li > .ticket__selection {
+  background-image: url("./img/plus.svg");
+}
+
+.selection__ticket:checked ~ span > ul > li > .ticket__value {
+  color: yellowgreen;
+}
+
+.ticket__list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.ticket__selection {
+  display: inline-block;
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6f6666;
+  border-radius: 50%;
+  background-image: url("./img/minus.svg");
+  background-size: contain;
+  transition: all 0.5s ease;
+}
+
+.ticket__title {
+  margin-right: 315px;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.ticket__info {
+  margin: 0;
+  font-size: 12px;
+}

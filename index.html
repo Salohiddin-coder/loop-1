@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 9</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="window">
+    <div class="window__inner">
+      <div class="window__left wallets">
+        <header class="wallets__header">
+          <strong class="wallets__title">My Wallets</strong>
+        </header>
+
+        <form action="https://echo-htmlacademy.ru" method="POST">
+
+          <label><input class="wallets__input visa visually-hidden" type="radio" name="user-cardname">
+            <span class="wallets__option visa-card">
+              <img src="./img/visa.svg" alt="visa card" class="visa-card_img" width="60" height="40">
+              <p class="visa-card__number">**** **** **** 2562</p>
+              <p class="visa-card__valid">Valid thru: 12/17</p>
+            </span></label>
+
+          <label><input class="wallets__input master visually-hidden" type="radio" name="user-cardname" id="">
+            <span class="wallets__option master-card">
+              <img src="./img/mastercard.svg" alt="master card" class="master-card_img" width="60" height="40">
+              <p class="master-card__number">**** **** **** 2101</p>
+              <p class="master-card__valid">Valid thru: 07/19</p>
+            </span></label>
+
+          <label >
+            <input class="wallets__input maestro visually-hidden" type="radio" name="user-cardname" id="">
+            <span class="wallets__option maestro-card">
+              <img src="./img/maestro.svg" alt="maestro card" class="maestro-card_img" width="60" height="40">
+              <p class="maestro-card__number">**** **** **** 2101</p>
+              <p class="maestro-card__valid">Valid thru: 07/19</p>
+            </span>
+          </label>
+          
+        </form>
+      </div>
+
+      <div class="window__right balance">
+        <div class="balance__header">
+          <strong class="balance__title">Current Balance</strong>
+          <strong class="balance__price">$729.<sup>00</sup></strong>
+        </div>
+
+          <form action="https://echo-htmlacademy.ru" method="post">
+            <label>
+              <input class="items__apple apple visually-hidden" type="radio" name="user-payment">
+              <span>
+                <ul class="apple__list">
+                  <li class="apple__item"><span class="apple__selection"></span></li>
+                  <li class="apple__item">
+                    <strong class="apple__title">Apple iPhone 7, 128 GB</strong>
+                    <p class="apple__info">Electronics #32343424 - 12 July 2015</p></li>
+                  <li class="apple__item"><strong class="apple__price">$650.<sup>00</sup></strong></li>
+                </ul>
+              </span>
+            </label>
+
+            <label>
+              <input class="selection__payment visually-hidden" type="radio" name="user-payment">
+              <span>
+                <ul class="items__list payment">
+                  <li class="payment__item"><span class="payment__selection"></span></li>
+                  <li class="payment__item"><strong class="payment__title">Funds Added</strong>
+                                            <p class="payment__info">Payment #5435-11 July 2015</p></li>
+                  <li class="payment__item"><strong class="payment__value">$900.<sup>00</sup></strong></li>
+                </ul>
+              </span>
+            </label>
+
+            <label>
+              <input class="selection__bill bill visually-hidden" type="radio" name="user-payment">
+              <span>
+                <ul class="bill__list">
+                  <li class="bill__item"><span class="bill__selection"></span></li>
+                  <li class="bill__item"><strong class="bill__title">Energy Bill</strong>
+                                            <p class="bill__info">Other #734567435-11 July 2015</p></li>
+                  <li class="bill__item"><strong class="bill__value">$84.<sup>90</sup></strong></li>
+                </ul>
+              </span>
+            </label>
+
+            <label>
+              <input class="selection__ticket ticket visually-hidden" type="radio" name="user-payment">
+              <span>
+                <ul class="ticket__list">
+                  <li class="ticket__item"><span class="ticket__selection"></span></li>
+                  <li class="ticket__item"><strong class="ticket__title">The Eye Cinema Ticket</strong>
+                                            <p class="ticket__info">Entertainment #334567435-10 July 2015</p></li>
+                  <li class="ticket__item"><strong class="ticket__value">$40.<sup>00</sup></strong></li>
+                </ul>
+              </span>
+            </label>
+          </form>  
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
